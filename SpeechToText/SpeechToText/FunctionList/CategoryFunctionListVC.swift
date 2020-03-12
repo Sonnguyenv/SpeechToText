@@ -42,7 +42,6 @@ extension CategoryFunctionListVC {
         for item in listCategory {
             textListCategory.append("。。。\(item.title)")
         }
-//        AudioService.shared.speech(with: textListCategory)
     }
 }
 
