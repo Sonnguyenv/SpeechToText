@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryFunctionListVC" customModule="SpeechToText" customModuleProvider="target">
+            <connections>
+                <outlet property="categoryCollection" destination="vxh-M3-lL4" id="4Pr-LH-ivE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khb-8C-c6T" userLabel="Seperator">
+                    <rect key="frame" x="0.0" y="52" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vFp-As-Fkb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSf-HL-FtT" userLabel="NavigationBar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="機能リスト" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCo-F6-yp7">
+                            <rect key="frame" x="142.5" y="11.5" width="90" height="21"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                            <color key="textColor" red="0.14901960780000001" green="0.1960784314" blue="0.2129731514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="9ak-c3-nxZ"/>
+                        <constraint firstItem="rCo-F6-yp7" firstAttribute="centerY" secondItem="GSf-HL-FtT" secondAttribute="centerY" id="hV5-nk-P4a"/>
+                        <constraint firstItem="rCo-F6-yp7" firstAttribute="centerX" secondItem="GSf-HL-FtT" secondAttribute="centerX" id="t05-xk-FcQ"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vxh-M3-lL4">
+                    <rect key="frame" x="0.0" y="53" width="375" height="614"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3jw-lT-Ura">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vxh-M3-lL4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="C1q-lm-809"/>
+                <constraint firstItem="khb-8C-c6T" firstAttribute="top" secondItem="GSf-HL-FtT" secondAttribute="bottom" constant="8" id="HPm-hk-X51"/>
+                <constraint firstItem="khb-8C-c6T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VLo-2D-cHm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vxh-M3-lL4" secondAttribute="bottom" id="Zkc-19-iMB"/>
+                <constraint firstItem="GSf-HL-FtT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bBw-SH-dIb"/>
+                <constraint firstItem="vxh-M3-lL4" firstAttribute="top" secondItem="khb-8C-c6T" secondAttribute="bottom" id="eKa-1m-4EO"/>
+                <constraint firstAttribute="trailing" secondItem="khb-8C-c6T" secondAttribute="trailing" id="hhP-re-NtA"/>
+                <constraint firstItem="GSf-HL-FtT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nWZ-6s-sKB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vxh-M3-lL4" secondAttribute="trailing" id="sVT-ey-tRM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GSf-HL-FtT" secondAttribute="trailing" id="xsw-BS-dZ3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="117"/>
+        </view>
+    </objects>
+</document>

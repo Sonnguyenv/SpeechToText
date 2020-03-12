@@ -1,0 +1,340 @@
+/* 
+  Localizable.strings
+  SpeechToText
+
+  Created by SonNV-D1 on 3/11/20.
+  Copyright © 2020 SonNV-D1. All rights reserved.
+*/
+// JAPAN
+"title_weather" = "天気";
+"title_note" = "ノート";
+"title_entertainment" = "ニュース、エンターテイメント";
+"title_detection" = "認識機能";
+"title_location" = "ポジショニング";
+"title_direction" = "ナビゲーション";
+"title_messaging" = "メッセージ";
+"title_call" = "電話";
+"title_readNews" = "新聞読み";
+"title_readStory" = "ストーリー読み";
+"title_tyGiaVang" = "金為替";
+"title_tyGiaNgoaiTe" = "為替レート";
+"title_emergencyContact" = "緊急連絡先";
+"f_title_location" = "ロケーション定位";
+"f_title_note" = "メモ";
+"f_title_detection" = "認識";
+"f_title_emergency" = "緊急連絡";
+
+// Function list
+"function_list" = "機能リスト";
+
+//Tutorial
+"tutorial_call" = "電話をかける案内";
+"tutorial_messages" = "メッセージ案内";
+"tutorial_location" = "定位案内";
+"tutorial_direction" = "ナビ案内";
+"tutorial_note" = "メモ案内";
+"tutorial_weather" = "天気情報の案内";
+"tutorial_detection" = "認識の案内";
+"tutorial_emergency" = "緊急連絡の案内";
+
+"t_description_call" = "画面に２回タップしてマイクをオンにして、以下の構文を入力してください。";
+"t_description_messages" = "";
+"t_description_location" = "";
+"t_description_direction" = "";
+"t_description_note" = "";
+"t_description_weather" = "";
+"t_description_detection" = "";
+"t_description_emergency" = "画面に２回タップしてマイクをオンにして、以下の項目を選択してください。";
+
+"t_content_call" = "Honda に電話をかけてください。";
+"t_content_messages" = "Honda にメッセージを送信してください。";
+"t_content_location" = "今の位置";
+"t_content_direction" = "Tokyo への道を教えて下さい。";
+"t_content_note" = "";
+"t_content_weather" = "";
+"t_content_detection" = "";
+"t_content_emergency" = "";
+"t_content_near_hopital" = "この近くの病院";
+"t_content_near_phamercy" = "この近くの薬局";
+"t_content_near_hotel" = "この近くのホテル";
+"t_content_near_restaurant" = "近所のレストラン";
+"t_content_travel_location" = "この周辺の観光スポット";
+"t_content_translate" = "通訳";
+"t_content_near_supermarket" = "この近くのスーパー";
+"t_content_near_gas" = "一番近いガソリンスタンド";
+"t_content_exchange_rate" = "金レート";
+
+//Detect
+"t_detect_money" = "お金認識";
+"t_detect_object" = "物体認識";
+"t_detect_flower" = "花認識";
+"t_detect_food" = "料理認識";
+"t_detect_text" = "テキスト認識";
+"t_detect_face" = "顔認識";
+"t_detect_image" = "イメージ認識";
+"t_detect_color" = "色認識";
+
+//Title
+"t_title_contact" = "連絡";
+"t_title_traffic" = "交通";
+"t_title_medical" = "健康";
+"t_title_utilities" = "ガジェット";
+"t_title_identify" = "認識";
+"t_title_travel" = "旅行";
+
+"t_touch_and_hold" = "機能ガイドをもう一度聞くために、画面にタップして長押して続けてください。";
+
+//Note
+"n_title_creat" = "Tạo ghi chú";
+"n_title_search" = "Tìm ghi chú";
+"n_title_recently" = "Ghi chú gần đây";
+"n_title_listen" = "Đọc ghi chú";
+"n_title_fix" = "Sửa ghi chú";
+"n_title_delete" = "Xoá ghi chú";
+
+"n_decription_title_creat" = "メモ作成";
+"n_decription_title_search" = "というメモを検索してください。";
+"n_decription_title_recently" = "最近のメモ";
+"n_decription_title_listen" = "メモを読んで上げ";
+"n_decription_title_fix" = "メモ編集をしてください。’";
+"n_decription_title_delete" = "メモ削除をしてください。’";
+
+//Weather
+"w_title_weather" = "Nhập cú pháp sau để biết thời tiết hôm nay";
+"w_title_weatherNext" = "Nhập cú pháp sau để biết thời tiết 3 ngày tiếp theo";
+
+"w_decription_title_weather" = "今日の天気";
+"w_decription_title_weatherNext" = "次の３日間の天気予報";
+
+//Detection
+"d_title_money" = "お金を認識したい場合、以下の構文を入力してください。";
+"d_title_items" = "物体を認識したい場合、以下の構文を入力してください。」";
+"d_title_text" = "テキストを認識したい場合、以下の構文を入力してください。";
+"d_title_flower" = "花を認識したい場合、以下の構文を入力してください。";
+"d_title_food" = "料理を認識したい場合、以下の構文を入力してください。";
+
+"d_decription_title_money" = "「お金認識」";
+"d_decription_title_items" = "「物体認識」";
+"d_decription_title_text" = "「テキスト認識」";
+"d_decription_title_flower" = "「花の認識」";
+"d_decription_title_food" = "「料理認識」";
+
+"title_money_detection" = "通貨認識";
+"title_object_detection" = "物体認識";
+"title_color_detection" = "色の認識";
+"title_text_detection" = "テキスト読み";
+
+//Emergency
+"e_title_rescue" = "Nhập cú pháp sau để liên hệ ngay với cơ quan cứu hộ";
+"e_title_ambulance" = "Nhập cú pháp sau để liên hệ ngay với cơ quan cứu thương";
+"e_title_fire" = "Nhập cú pháp sau để liên hệ ngay với cơ quan cứu hỏa";
+"e_title_police" = "Nhập cú pháp sau để liên hệ ngay với cơ quan cảnh sát";
+"e_title_create" = "Tạo một liên hệ khẩn cấp";
+"e_title_emergencyCall" = "Gọi ngay một liên hệ khẩn cấp";
+
+"e_decription_title_rescue" = "救助を呼んでください。";
+"e_decription_title_ambulance" = "救急車を呼んでください。";
+"e_decription_title_fire" = "消防車を呼んでください。";
+"e_decription_title_police" = "警察を呼んでください。";
+"e_decription_title_create" = "緊急連絡先作成";
+"e_decription_title_emergencyCall" = "Honda という緊急連絡先に電話をかけてください。";
+
+//Setting
+"s_title_chatbot" = "ChatBot設定";
+"s_title_permission" = "アプリ権限";
+"s_title_BLE" = "BLEへのアクセス設定";
+"s_title_profile" = "プロファイル編集";
+
+//Speech Speed ChatBot
+"speed_slow" = "遅い";
+"speed_normal" = "通常";
+"speed_fastNormal" = "速い";
+"speed_fast" = "超速い";
+
+"title_ok" = "はい";
+"title_cancel" = "キャンセル";
+
+"title_document_support_message" = "これはテキスト認識と翻訳の機能です。認識を始めるために、画面にタップしてください。";
+"title_document_waiting_message" = "テキストを認識しています。少々お待ち下さい。";
+"title_document_can_not_read_text" = "イメージでの文字が認識できません。";
+"title_document_can_not_open_camera" = "カメラに遷移できません。";
+
+"title_document_guide_message_with_foreign_language" = "原文のテキストを読み上げたい場合は「１」を言ってください。翻訳したい場合は、「２」を言ってください。または、他のテキストを認識したい場合、「３」を言ってください。";
+"title_document_guide_message_with_japanese" = "これは日本語のテキストです。テキストを読み上げられるために「１」を言ってください。他のテキストを認識したい場合、「２」を言ってください。";
+
+"title_thongBao" = "お知らせ";
+"title_document_end_guide_message_with_foreign_language" = "以上です。原文のテキストを読み上げたい場合、「１」を言ってください。翻訳されたテキストを読み上げたい場合は、「２」を言ってください。または、他のテキストを認識したい場合、「３」を言ってください。";
+"title_document_end_guide_message_with_jp" = "以上です。原文のテキストを読み上げたい場合、「１」を言ってください。または、他のテキストを認識したい場合、「２」を言ってください。";
+
+"title_stop" = "ストップ";
+"title_listen_again" = "もう一度";
+"title_listen" = "聞く";
+"title_capture_again" = "もう一度";
+"title_call" = "電話";
+"title_message" = "メッセージ";
+"title_direction" = "ナビゲーション";
+"title_location" = "ポジショニング";
+"message_camera_not_granted" = "カメラとストレージへのアクセスをまだ許可しません。";
+
+"message_object_detection_guide" = "物体認識という機能です。認識を開始するために、カメラを固定したまま、画面を1回タップしてください。";
+"message_unable_resume_session" = "セッションを再開できません";
+"message_session_error" = "セッションを再開するときにエラーが発生しました。";
+"message_camera_permission_error" = "Camera 権をまだ許可しない場合は、設定画面で許可してください。";
+"title_cancel" = "キャンセル";
+"title_settings" = "インストールする";
+"title_can_not_detect_object" = "物体を認識できませんでした。";
+"title_color_camera_support_message" = "カメラ画面に遷移しています。写真を撮るために画像をカメラの前に置いて、画面をタップしてください。";
+"title_color_camera_waiting_message" = "イメージ認識しています。少々お待ち下さい。";
+"title_color_can_not_recognize" = "イメージでの色を認識できません。";
+"title_read_color_start_clause" = "そこで撮影した写真";
+"title_setup_chatbot" = "チャットボットをインストールする";
+"title_favorite_service" = "親密なサービス";
+"title_screen_brightness" = "画面の明るさ";
+"title_app_permission" = "アプリケーション許可";
+"title_success" = "成功";
+"title_failed" = "失敗";
+"title_taxi_saved" = "タクシーの連絡先を保存しました";
+"title_taxi_not_saved" = "タクシーの連絡先を保存できません";
+"title_enter_full_information" = "完全な情報を入力してください";
+"title_bike_saved" = "バイクタクシーが保存されました";
+"title_bike_save_failed" = "オートバイのタクシーの連絡先を保存できません";
+"title_location_permission" = "ロケーションアクセス";
+"title_camera_permission" = "カメラを使用する";
+"title_contact_permission" = "連絡先にアクセスする";
+"title_micro_permission" = "記録する権利";
+"title_photo_permission" = "フォトギャラリー";
+"title_notification_permission" = "通知を受ける";
+"message_place_holder" = "今日は何を聞きたいですか？";
+"set_to_slow_speech" = "読み取りが遅い速度に切り替えました。";
+"set_to_normal_speech" = "読み取りが通常速度に切り替えました。";
+"set_to_fast_speech" = "読み取りが速い速度に切り替えました。";
+"set_to_very_fast_speech" = "読み取りが非常に速い速度に切り替えました。";
+"message_first_greetings" = "こんにちは。ピーゴーアシスタントです。";
+"message_second_greetings" = "あなたの知りたいことややりたいことをサポートします。";
+"pigo_can_not_recoginze_gender" = "Pigoが認識できませんでした。もう一度お試しください";
+"pigo_ask_gender" = "あなたは男性ですか、女性ですか？";
+"pigo_ask_name" = "あなたの名前を言ってください";
+"title_notification_dialog" = "お知らせ";
+"title_ok" = "同意する";
+"title_camera_not_granted_permission" = "カメラへアクセスをまだ許可しません。";
+"photo_library_permisison_request" = "この機能を使用するために、フォトライブラリーのアクセスを許可してください。";
+
+//Name
+"your_name" = "キーボードで名前を入力してください。または、声で教えて下さい。";
+"enter_name" = "名前を入力してください";
+"my_name" = "私の名前は";
+"name_save" = "名前を保存します";
+"name_back" = "戻る";
+
+//Permission
+"p_title_memory" = "ストレージ";
+"p_title_call" = "電話をかける";
+"p_title_messages" = "メッセージを送信する";
+"p_title_camera" = "携帯のカメラ";
+"p_title_micro" = "録音";
+"p_title_locationGPS" = "GPS位置";
+"p_title_contact" = "連絡先リスト";
+"p_title_speech" = "音声認識";
+
+// BaseCameraVC capture error
+"failed_to_capture_error_message" = "エラーが発生しました。もう一度お試してください。";
+
+//Gender
+"gender_description" = "画面で性別を選択してください。または、声で教えて下さい。";
+"gender_male" = "男性";
+"gender_female" = "女性";
+"gender_choose" = "性別選択";
+"not_recoginze_gender" = "性別をまだ選択しません";
+"not_recoginze_name" = "名前をまだ入力しません";
+
+// Flowers Localizations
+"hoadoquyen" = "つつじ、アザレア";
+"hoahong" = "バラ";
+"boconganh" = "たんぽぽ";
+"hoasen" = "蓮";
+"hoacatcanh" = "桔梗";
+"hoamaudon" = "牡丹";
+"hoathachthao" = "紫苑";
+"hoadienvi" = "菖蒲";
+"hoabimbim" = "朝顔";
+"hoachuong" = "ベルフラワー";
+"hoachianh" = "芝桜";
+"hoacosmos" = "コスモス";
+"camtucau" = "紫陽花";
+"hoatudang" = "藤の花";
+"hoacuc" = "菊";
+"hoatra" = "椿";
+"hoaanhdao" = "さくら";
+"hoatulip" = "チューリップ";
+"hoaanhtuc" = "コクリコ"; // hoa hong anh
+"hoathuytien" = "水仙";
+"hoacanhbuom" = "パンジー";
+"hoacamchuong" = "カーネーション";
+"hoamai" = "梅の花";
+"hoamargaret" = "マーガレット";
+"hoalan" = "シラン";
+"hoaviolet" = "すみれ";
+"hoahuongduong" = "ひまわり";
+"hoa_background" = "花を認識できませんでした。";
+
+// Food
+"Dango" = "団子";
+"Donburi" = "丼ぶり";
+"Dorayaki" = "どら焼き";
+"Gyudon" = "牛丼";
+"Karaage" = "唐揚げ";
+"Nikujaga" = "肉じゃが";
+"Oden" = "おでん";
+"Okonomiyaki" = "お好み焼き";
+"Soba" = "そば";
+"Somen" = "粗面";
+"Tempura" = "天ぷら";
+"Tonkatsu" = "とんかつ";
+"Udon" = "うどん";
+"Yakisoba" = "焼きそば";
+"Yakitori" = "焼き鳥";
+"food_background" = "料理を認識できませんでした。";
+"Curry" = "カレー";
+"Fried_rice" = "チャーハン";
+"Gyoza" = "ギョウザ";
+"Miso_soup" = "味噌汁";
+"Natto" = "納豆";
+"Omelette" = "オムレツ";
+"Pizza" = "ピザ";
+"Ramen" = "ラメン";
+"Rice_ball" = "おにぎり";
+"Sashimi" = "刺し身";
+"Sushi" = "すし";
+"Takoyaki" = "たこ焼き";
+
+// Coin
+"coin_background" = "お金の価値を認識できませんでした。";
+
+// Title and guidle for live detection
+"title_flower_detection" = "花の認識";
+"guide_message_flower_detection" = "花認識という機能です。認識を開始するために、カメラを固定したまま、画面を1回タップしてください。";
+"title_money_detection" = "お金認識";
+"guide_message_money_detection" = "これはお金認識の機能です。携帯のカメラの前に札または硬貨を配置し、画面をタップしてください。";
+"title_food_detection" = "料理認識";
+"guide_message_food_detection" = "料理認識という機能です。認識を開始するために、カメラを固定したまま、画面を1回タップしてください。";
+"title_coin_detection" = "お金認識";
+"guide_message_coin_detection" = "これはお金認識の機能です。携帯のカメラの前に札または硬貨を配置し、画面をタップしてください。";
+
+// Image detection
+"image_detection_label" = "イメージ認識";
+"image_detection_support_message" = "イメージ認識という機能です。認識を開始するために、カメラを固定したまま、画面を1回タップしてください。";
+"image_detection_waiting_message" = "画像を識別しています。しばらくお待ちください";
+"image_detection_guide_message" = "画像フォルダーから写真をアップロードしたい場合、１と言ってください。写真を撮りたい場合、２と言ってください。";
+
+
+// Document Detection
+"wrong_input_message" = "フォマットが不適切です。再度入力してください。";
+"reading_original_text" = "原文のテキストを読み上げています。";
+"end_text_japan_with_two_options" = "以上です。原文のテキストを読み上げたい場合、「１」と言ってください。または、他のテキストを認識したい場合、「２」と言ってください。";
+"wrong_input_japan_with_two_options" = "これは日本語のテキストです。テキストを読み上げられるために「１」と言ってください。他のテキストを認識したい場合、「２」と言ってください。";
+"reading_translated_text" = "翻訳られたテキストを読み上げます。";
+"end_text_with_three_options" = "以上です。原文のテキストを読み上げたい場合、「１」と言ってください。翻訳されたテキストを読み上げたい場合は、「２」と言ってください。または、他のテキストを認識したい場合、「３」と言ってください。";
+"can_not_recognize_text" = "認識されないテキスト";
+"wrong_input_foreign_with_three_options" = "テキストです。原文のテキストを読み上げたい場合は「１」と言ってください。翻訳したい場合は、「２」と言ってください。または、他のテキストを認識したい場合、「３」と言ってください。";
+"title_document_detection" = "テキスト認識";
+"wrong_option_message" = "このオプションはありません。再度入力してください。";
