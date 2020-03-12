@@ -23,7 +23,7 @@ class TutorialVC: UIViewController {
     //MARK: - Variables
     var funcTionType = FunctionType.call
     var textSpeech: [String] = []
-    
+    var textContent = ""
     // MARK: - Life Cycle ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,6 +82,9 @@ extension TutorialVC: UITableViewDataSource {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ImageViewCell") as! ImageViewCell
             cell.imageCell.image = funcTionType.image
+            cell.textData = {[weak self] text in
+                self?.textContent = text
+            }
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "DescriptionTableViewCell") as! DescriptionTableViewCell
@@ -115,15 +118,20 @@ extension TutorialVC: UITableViewDelegate {
             default:
                 switch funcTionType {
                 case .note:
-                    AudioService.shared.speak(with: noteType[indexPath.row].description)
+                    let textSpeech = textContent + " " + noteType[indexPath.row].description
+                    AudioService.shared.speak(with: textSpeech)
                 case .weather:
-                    AudioService.shared.speak(with: weatherType[indexPath.row].description)
+                    let textSpeech = textContent + " " + weatherType[indexPath.row].description
+                    AudioService.shared.speak(with: textSpeech)
                 case .emergencyContact:
-                    AudioService.shared.speak(with: emergencyContact[indexPath.row].description)
+                    let textSpeech = textContent + " " + emergencyContact[indexPath.row].description
+                    AudioService.shared.speak(with: textSpeech)
                 case .detection:
-                    AudioService.shared.speak(with: detectionType[indexPath.row].description)
+                    let textSpeech = textContent + " " + detectionType[indexPath.row].description
+                    AudioService.shared.speak(with: textSpeech)
                 default:
-                    AudioService.shared.speak(with: funcTionType.content)
+                    let textSpeech = textContent + " " + funcTionType.content
+                    AudioService.shared.speak(with: textSpeech)
                 }
             }
         }

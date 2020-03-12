@@ -46,10 +46,10 @@
 "t_description_detection" = "";
 "t_description_emergency" = "画面に２回タップしてマイクをオンにして、以下の項目を選択してください。";
 
-"t_content_call" = "Honda に電話をかけてください。";
-"t_content_messages" = "Honda にメッセージを送信してください。";
+"t_content_call" = "に電話をかけてください。";
+"t_content_messages" = "にメッセージを送信してください。";
 "t_content_location" = "今の位置";
-"t_content_direction" = "Tokyo への道を教えて下さい。";
+"t_content_direction" = "への道を教えて下さい。";
 "t_content_note" = "";
 "t_content_weather" = "";
 "t_content_detection" = "";
@@ -86,11 +86,11 @@
 
 //Note
 "n_title_creat" = "Tạo ghi chú";
-"n_title_search" = "Tìm ghi chú";
+"n_title_search" = "Tìm ghi chú {{nội dung}}";
 "n_title_recently" = "Ghi chú gần đây";
-"n_title_listen" = "Đọc ghi chú";
-"n_title_fix" = "Sửa ghi chú";
-"n_title_delete" = "Xoá ghi chú";
+"n_title_listen" = "Đọc ghi chú {{tên_ghi_chú}}";
+"n_title_fix" = "Sửa ghi chú {{tên_ghi_chú}}";
+"n_title_delete" = "Xóa ghi chú {{tên_ghi_chú}}";
 
 "n_decription_title_creat" = "メモ作成";
 "n_decription_title_search" = "というメモを検索してください。";
@@ -130,14 +130,14 @@
 "e_title_fire" = "Nhập cú pháp sau để liên hệ ngay với cơ quan cứu hỏa";
 "e_title_police" = "Nhập cú pháp sau để liên hệ ngay với cơ quan cảnh sát";
 "e_title_create" = "Tạo một liên hệ khẩn cấp";
-"e_title_emergencyCall" = "Gọi ngay một liên hệ khẩn cấp";
+"e_title_emergencyCall" = "Gọi cho liên hệ khẩn cấp{{tên}}";
 
 "e_decription_title_rescue" = "救助を呼んでください。";
 "e_decription_title_ambulance" = "救急車を呼んでください。";
 "e_decription_title_fire" = "消防車を呼んでください。";
 "e_decription_title_police" = "警察を呼んでください。";
 "e_decription_title_create" = "緊急連絡先作成";
-"e_decription_title_emergencyCall" = "Honda という緊急連絡先に電話をかけてください。";
+"e_decription_title_emergencyCall" = "という緊急連絡先に電話をかけてください。";
 
 //Setting
 "s_title_chatbot" = "ChatBot設定";
