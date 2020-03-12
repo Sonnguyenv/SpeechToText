@@ -28,6 +28,7 @@ class TutorialVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -45,6 +46,14 @@ class TutorialVC: UIViewController {
         tableView.register(UINib(nibName: "TextCancelCell", bundle: nil), forCellReuseIdentifier: "TextCancelCell")
         tableView.dataSource = self
         tableView.delegate = self
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer( target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     @IBAction func buttonBack(_ sender: Any) {

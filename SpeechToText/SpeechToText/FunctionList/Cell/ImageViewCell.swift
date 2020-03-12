@@ -19,7 +19,6 @@ class ImageViewCell: UITableViewCell {
         super.awakeFromNib()
         viewImage.layer.cornerRadius = 70
         viewImage.layer.masksToBounds = true
-        
     }
     
     @IBAction func editingDidEndTextField(_ sender: UITextField) {
