@@ -46,10 +46,10 @@
 "t_description_detection" = "";
 "t_description_emergency" = "画面に２回タップしてマイクをオンにして、以下の項目を選択してください。";
 
-"t_content_call" = "に電話をかけてください。";
-"t_content_messages" = "にメッセージを送信してください。";
-"t_content_location" = "今の位置";
-"t_content_direction" = "への道を教えて下さい。";
+"t_content_call" = "山田に電話をかけてください。";
+"t_content_messages" = "山田にメッセージを送信してください。";
+"t_content_location" = "現在地";
+"t_content_direction" = "ノイバイ空港への道を教えてください。";
 "t_content_note" = "";
 "t_content_weather" = "";
 "t_content_detection" = "";
@@ -64,15 +64,27 @@
 "t_content_near_gas" = "一番近いガソリンスタンド";
 "t_content_exchange_rate" = "金レート";
 
+//Call
+"t_titlet_call_yamada" = "山田に電話をかけてください。";
+"t_title_call_tanaka" = "田中に電話をかけてください。";
+
+//Message
+"t_titlet_mess_yamada" = "山田にメッセージを送信してください。";
+"t_titlet_mess_tanaka" = "田中にメッセージを送信してください。";
+
 //Detect
 "t_detect_money" = "お金認識";
 "t_detect_object" = "物体認識";
-"t_detect_flower" = "花認識";
-"t_detect_food" = "料理認識";
-"t_detect_text" = "テキスト認識";
-"t_detect_face" = "顔認識";
+"t_detect_flower" = "これは何の花ですか。";
+"t_detect_food" = "この料理はなんですか。";
+"t_detect_text" = "このテキストを読みあげでください。";
+"t_detect_face" = "顔画像作成";
 "t_detect_image" = "イメージ認識";
-"t_detect_color" = "色認識";
+"t_detect_color" = "これは何の色ですか。";
+
+//DetectMoney
+"t_detect_money_paper" = "この札の価値を教えて下さい。";
+"t_detect_money_coin" = "この硬貨の価値を教えてください。";
 
 //Title
 "t_title_contact" = "連絡";

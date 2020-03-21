@@ -19,7 +19,10 @@ class TutorialVC: UIViewController {
     let weatherType: [WeatherType] = [.weather, .weatherNext]
     let detectionType: [DetectionContentType] = [.money, .items, .text, .flower, .food]
     let emergencyContact: [EmergencyType] = [.rescue, .ambulance, .fire, .police, .create, .emergencyCall]
-
+    let callType: [CallType] = [.callYamada, .callTanaka]
+    let messType: [MessageType] = [.messYamada, .messTanaka]
+    let detectMoney: [DetectMoneyType] =  [.paper, .coin]
+    
     //MARK: - Variables
     var funcTionType = FunctionType.call
     var textSpeech: [String] = []
@@ -72,12 +75,21 @@ extension TutorialVC: UITableViewDataSource {
             return 1
         default :
             switch funcTionType {
+            case .call:
+                return callType.count
+            case .messaging:
+                return messType.count
             case .note:
                 return noteType.count
             case .weather:
                 return weatherType.count
             case .detection:
-                return detectionType.count
+                switch detectionType[section] {
+                case .money:
+                    return detectMoney.count
+                default:
+                    return detectionType.count
+                }
             case .emergencyContact:
                 return emergencyContact.count
             default:
@@ -98,6 +110,12 @@ extension TutorialVC: UITableViewDataSource {
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "DescriptionTableViewCell") as! DescriptionTableViewCell
             switch funcTionType {
+            case .call:
+                cell.title.text = callType[indexPath.row].title
+                cell.decription.text = ""
+            case .messaging:
+                cell.title.text = messType[indexPath.row].title
+                cell.decription.text = ""
             case .note:
                 cell.title.text = noteType[indexPath.row].title
                 cell.decription.text = noteType[indexPath.row].description
@@ -105,8 +123,14 @@ extension TutorialVC: UITableViewDataSource {
                 cell.title.text = weatherType[indexPath.row].title
                 cell.decription.text = weatherType[indexPath.row].description
             case .detection:
-                cell.title.text = detectionType[indexPath.row].title
-                cell.decription.text = detectionType[indexPath.row].description
+                switch detectionType[indexPath.row] {
+                case .money:
+                    cell.title.text = detectMoney[indexPath.row].title
+                    cell.decription.text = ""
+                default:
+                    cell.title.text = detectionType[indexPath.row].title
+                    cell.decription.text = detectionType[indexPath.row].description
+                }
             case .emergencyContact:
                 cell.title.text = emergencyContact[indexPath.row].title
                 cell.decription.text = emergencyContact[indexPath.row].description
@@ -126,6 +150,12 @@ extension TutorialVC: UITableViewDelegate {
                 return
             default:
                 switch funcTionType {
+                case .call:
+                    let textSpeech = textContent + " " + callType[indexPath.row].title
+                    AudioService.shared.speak(with: textSpeech)
+                case .messaging:
+                    let textSpeech = textContent + " " + messType[indexPath.row].title
+                    AudioService.shared.speak(with: textSpeech)
                 case .note:
                     let textSpeech = textContent + " " + noteType[indexPath.row].description
                     AudioService.shared.speak(with: textSpeech)

@@ -149,7 +149,7 @@ enum FunctionType {
     var description: String {
         switch self {
         case .call:
-            return "t_description_call".localized
+            return CallType.callTanaka.title
         case .messaging:
             return "t_description_call".localized
         case .location:
@@ -505,7 +505,7 @@ enum DetectionContentType {
     var title: String {
         switch self {
         case .money:
-            return "d_title_money".localized
+            return DetectMoneyType.paper.title
         case .items:
             return "d_title_items".localized
         case .text:
@@ -576,3 +576,45 @@ enum EmergencyType {
     }
 }
 
+enum CallType {
+    case callYamada
+    case callTanaka
+    
+    var title: String {
+        switch self {
+        case .callYamada:
+            return "t_titlet_call_yamada".localized
+        case .callTanaka:
+            return "t_title_call_tanaka".localized
+        }
+    }
+}
+
+enum MessageType {
+    case messYamada
+    case messTanaka
+    
+    var title: String {
+        switch self {
+        case .messYamada:
+            return "t_titlet_mess_yamada".localized
+        case .messTanaka:
+            return "t_titlet_mess_tanaka".localized
+        }
+    }
+}
+
+
+enum DetectMoneyType {
+    case paper
+    case coin
+    
+    var title: String {
+        switch self {
+        case .paper:
+            return "t_detect_money_paper".localized
+        case .coin:
+            return "t_detect_money_coin".localized
+        }
+    }
+}
