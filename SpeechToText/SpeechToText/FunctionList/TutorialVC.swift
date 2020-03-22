@@ -31,7 +31,6 @@ class TutorialVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -41,7 +40,7 @@ class TutorialVC: UIViewController {
     override func viewDidLayoutSubviews() {
        tableView.isScrollEnabled = tableView.contentSize.height > tableView.frame.size.height
     }
-
+    
     private func setupView() {
         labelTitle.text = funcTionType.title
         tableView.register(UINib(nibName: "ImageViewCell", bundle: nil), forCellReuseIdentifier: "ImageViewCell")
@@ -59,6 +58,7 @@ class TutorialVC: UIViewController {
         view.endEditing(true)
     }
     
+    // Action
     @IBAction func buttonBack(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
