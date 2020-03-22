@@ -84,12 +84,9 @@ extension TutorialVC: UITableViewDataSource {
             case .weather:
                 return weatherType.count
             case .detection:
-                switch detectionType[section] {
-                case .money:
-                    return detectMoney.count
-                default:
-                    return detectionType.count
-                }
+                return detectionType.count
+            case .detectMoney:
+                return detectMoney.count
             case .emergencyContact:
                 return emergencyContact.count
             default:
@@ -123,14 +120,11 @@ extension TutorialVC: UITableViewDataSource {
                 cell.title.text = weatherType[indexPath.row].title
                 cell.decription.text = weatherType[indexPath.row].description
             case .detection:
-                switch detectionType[indexPath.row] {
-                case .money:
-                    cell.title.text = detectMoney[indexPath.row].title
-                    cell.decription.text = ""
-                default:
-                    cell.title.text = detectionType[indexPath.row].title
-                    cell.decription.text = detectionType[indexPath.row].description
-                }
+                cell.title.text = detectionType[indexPath.row].title
+                cell.decription.text = detectionType[indexPath.row].description
+            case .detectMoney:
+                cell.title.text = ""
+                cell.decription.text = detectMoney[indexPath.row].description
             case .emergencyContact:
                 cell.title.text = emergencyContact[indexPath.row].title
                 cell.decription.text = emergencyContact[indexPath.row].description
@@ -167,6 +161,9 @@ extension TutorialVC: UITableViewDelegate {
                     AudioService.shared.speak(with: textSpeech)
                 case .detection:
                     let textSpeech = textContent + " " + detectionType[indexPath.row].description
+                    AudioService.shared.speak(with: textSpeech)
+                case .detectMoney:
+                    let textSpeech = textContent + " " + detectMoney[indexPath.row].description
                     AudioService.shared.speak(with: textSpeech)
                 default:
                     let textSpeech = textContent + " " + funcTionType.content

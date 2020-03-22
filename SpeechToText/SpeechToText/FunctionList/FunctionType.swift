@@ -226,7 +226,7 @@ enum FunctionType {
         case .exchangeRate:
             return "t_content_exchange_rate".localized
         case .detectMoney:
-            return "t_detect_money".localized
+            return DetectMoneyType.paper.description
         case .detectObject:
             return "t_detect_object".localized
         case .detectFlower:
@@ -505,7 +505,7 @@ enum DetectionContentType {
     var title: String {
         switch self {
         case .money:
-            return DetectMoneyType.paper.title
+            return "d_title_money".localized
         case .items:
             return "d_title_items".localized
         case .text:
@@ -609,7 +609,7 @@ enum DetectMoneyType {
     case paper
     case coin
     
-    var title: String {
+    var description: String {
         switch self {
         case .paper:
             return "t_detect_money_paper".localized
