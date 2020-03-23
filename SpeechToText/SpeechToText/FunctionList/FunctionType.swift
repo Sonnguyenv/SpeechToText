@@ -226,7 +226,7 @@ enum FunctionType {
         case .exchangeRate:
             return "t_content_exchange_rate".localized
         case .detectMoney:
-            return DetectMoneyType.paper.description
+            return "t_content_detection".localized
         case .detectObject:
             return "t_detect_object".localized
         case .detectFlower:
@@ -248,7 +248,7 @@ enum FunctionType {
         case .travelLocation:
             return "t_content_travel_location".localized
         case .translate:
-            return "t_content_translate".localized
+            return TranslateType.enlish.description
         case .nearSupermarket:
             return "t_content_near_supermarket".localized
         case .nearGas:
@@ -436,6 +436,9 @@ enum NoteType {
     case listenNote
     case fixNote
     case deleteNote
+    case contentNote
+    case locationNote
+    case timeNote
     
     var title: String {
         switch self {
@@ -451,6 +454,12 @@ enum NoteType {
             return "n_title_fix".localized
         case .deleteNote:
             return "n_title_delete".localized
+        case .contentNote:
+            return "n_title_content_note".localized
+        case .locationNote:
+            return "title_market".localized
+        case .timeNote:
+            return "title_time".localized
         }
     }
     
@@ -468,6 +477,12 @@ enum NoteType {
             return "n_decription_title_fix".localized
         case .deleteNote:
             return "n_decription_title_delete".localized
+        case .contentNote:
+            return "n_decription_content_note".localized
+        case .locationNote:
+            return "decription_title_market".localized
+        case .timeNote:
+            return "decription_title_time".localized
         }
     }
 }
@@ -615,6 +630,20 @@ enum DetectMoneyType {
             return "t_detect_money_paper".localized
         case .coin:
             return "t_detect_money_coin".localized
+        }
+    }
+}
+
+enum TranslateType {
+    case enlish
+    case vietnamese
+    
+    var description: String {
+        switch self {
+        case .enlish:
+            return "d_translate_english".localized
+        case .vietnamese:
+            return "d_translate_vietnamese".localized
         }
     }
 }

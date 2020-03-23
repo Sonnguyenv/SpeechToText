@@ -15,13 +15,14 @@ class TutorialVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Constant
-    let noteType: [NoteType] = [.creatNote, .searchNote, .recentlyNote, .listenNote, .fixNote, .deleteNote]
+    let noteType: [NoteType] = [.creatNote, .searchNote, .recentlyNote, .listenNote, .fixNote, .deleteNote, .contentNote, .locationNote, .timeNote]
     let weatherType: [WeatherType] = [.weather, .weatherNext]
     let detectionType: [DetectionContentType] = [.money, .items, .text, .flower, .food]
     let emergencyContact: [EmergencyType] = [.rescue, .ambulance, .fire, .police, .create, .emergencyCall]
     let callType: [CallType] = [.callYamada, .callTanaka]
     let messType: [MessageType] = [.messYamada, .messTanaka]
     let detectMoney: [DetectMoneyType] =  [.paper, .coin]
+    let translateType: [TranslateType] = [.enlish, .vietnamese]
     
     //MARK: - Variables
     var funcTionType = FunctionType.call
@@ -87,6 +88,8 @@ extension TutorialVC: UITableViewDataSource {
                 return detectionType.count
             case .detectMoney:
                 return detectMoney.count
+            case .translate:
+                return translateType.count
             case .emergencyContact:
                 return emergencyContact.count
             default:
@@ -125,6 +128,9 @@ extension TutorialVC: UITableViewDataSource {
             case .detectMoney:
                 cell.title.text = ""
                 cell.decription.text = detectMoney[indexPath.row].description
+            case .translate:
+                cell.title.text = ""
+                cell.decription.text = translateType[indexPath.row].description
             case .emergencyContact:
                 cell.title.text = emergencyContact[indexPath.row].title
                 cell.decription.text = emergencyContact[indexPath.row].description
@@ -164,6 +170,9 @@ extension TutorialVC: UITableViewDelegate {
                     AudioService.shared.speak(with: textSpeech)
                 case .detectMoney:
                     let textSpeech = textContent + " " + detectMoney[indexPath.row].description
+                    AudioService.shared.speak(with: textSpeech)
+                case .translate:
+                    let textSpeech = textContent + " " + translateType[indexPath.row].description
                     AudioService.shared.speak(with: textSpeech)
                 default:
                     let textSpeech = textContent + " " + funcTionType.content

@@ -56,12 +56,12 @@
 "t_content_emergency" = "";
 "t_content_near_hopital" = "この近くの病院";
 "t_content_near_phamercy" = "この近くの薬局";
-"t_content_near_hotel" = "この近くのホテル";
-"t_content_near_restaurant" = "近所のレストラン";
-"t_content_travel_location" = "この周辺の観光スポット";
+"t_content_near_hotel" = "周辺のホテル";
+"t_content_near_restaurant" = "周辺のレストラン";
+"t_content_travel_location" = "周辺の観光スポット";
 "t_content_translate" = "通訳";
-"t_content_near_supermarket" = "この近くのスーパー";
-"t_content_near_gas" = "一番近いガソリンスタンド";
+"t_content_near_supermarket" = "周辺のスーパー";
+"t_content_near_gas" = "周辺のガソリン";
 "t_content_exchange_rate" = "金レート";
 
 //Call
@@ -86,6 +86,10 @@
 "t_detect_money_paper" = "この札の価値を教えて下さい。";
 "t_detect_money_coin" = "この硬貨の価値を教えてください。";
 
+// Translate
+"d_translate_english" = "英語に通訳してください。";
+"d_translate_vietnamese" = "ベトナム語に通訳してください。";
+
 //Title
 "t_title_contact" = "連絡";
 "t_title_traffic" = "交通";
@@ -103,20 +107,26 @@
 "n_title_listen" = "Đọc ghi chú {{tên_ghi_chú}}";
 "n_title_fix" = "Sửa ghi chú {{tên_ghi_chú}}";
 "n_title_delete" = "Xóa ghi chú {{tên_ghi_chú}}";
+"n_title_content_note" = "Đi siêu thị lúc 4h chiều";
+"title_market" = "Siêu thị";
+"title_time" = "4h chiều";
 
-"n_decription_title_creat" = "メモ作成";
+"n_decription_title_creat" = "メモを作成してください。";
 "n_decription_title_search" = "というメモを検索してください。";
-"n_decription_title_recently" = "最近のメモ";
-"n_decription_title_listen" = "メモを読んで上げ";
+"n_decription_title_recently" = "最近のメモをよんであげてください。";
+"n_decription_title_listen" = "スーパーメモを読んで上げてください。";
 "n_decription_title_fix" = "メモ編集をしてください。’";
-"n_decription_title_delete" = "メモ削除をしてください。’";
+"n_decription_title_delete" = "スーパーメモ削除をしてください。’";
+"n_decription_content_note" = "午後４時にスーパーへ行きます。";
+"decription_title_market" = "スーパー";
+"decription_title_time" = "午後４";
 
 //Weather
 "w_title_weather" = "Nhập cú pháp sau để biết thời tiết hôm nay";
 "w_title_weatherNext" = "Nhập cú pháp sau để biết thời tiết 3 ngày tiếp theo";
 
 "w_decription_title_weather" = "今日の天気";
-"w_decription_title_weatherNext" = "次の３日間の天気予報";
+"w_decription_title_weatherNext" = "３日間の天気";
 
 //Detection
 "d_title_money" = "お金を認識したい場合、以下の構文を入力してください。";
@@ -142,14 +152,14 @@
 "e_title_fire" = "Nhập cú pháp sau để liên hệ ngay với cơ quan cứu hỏa";
 "e_title_police" = "Nhập cú pháp sau để liên hệ ngay với cơ quan cảnh sát";
 "e_title_create" = "Tạo một liên hệ khẩn cấp";
-"e_title_emergencyCall" = "Gọi cho liên hệ khẩn cấp{{tên}}";
+"e_title_emergencyCall" = "Gọi khẩn cấp cho yamada";
 
 "e_decription_title_rescue" = "救助を呼んでください。";
 "e_decription_title_ambulance" = "救急車を呼んでください。";
 "e_decription_title_fire" = "消防車を呼んでください。";
-"e_decription_title_police" = "警察を呼んでください。";
-"e_decription_title_create" = "緊急連絡先作成";
-"e_decription_title_emergencyCall" = "という緊急連絡先に電話をかけてください。";
+"e_decription_title_police" = "警察に通報してください。";
+"e_decription_title_create" = "緊急連絡先を作成してください";
+"e_decription_title_emergencyCall" = "山田に緊急連絡をしてください。";
 
 //Setting
 "s_title_chatbot" = "ChatBot設定";
