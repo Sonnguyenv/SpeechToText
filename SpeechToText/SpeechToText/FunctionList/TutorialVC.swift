@@ -28,6 +28,7 @@ class TutorialVC: UIViewController {
     var funcTionType = FunctionType.call
     var textSpeech: [String] = []
     var textContent = ""
+    
     // MARK: - Life Cycle ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
